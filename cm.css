@@ -1,0 +1,403 @@
+/*Text, display, positioning & margins HTML & CSS all adapted from WEB APP DEV lecture slides, practicals, W3schools, developer.mozilla.org and HTMLdog tutorials
+
+Code also adapted from Assignment 1 and 2 of this module.
+
+Colors taken from https://www.w3schools.com/colors/colors_picker.asp
+*/
+
+/*** Body Styles **/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+
+}
+
+/*** Header Styles **/
+
+header {
+    width: 100%;
+    height: 150px;
+
+}
+
+#headerdiv {
+    overflow: hidden;
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #4E5066;
+
+}
+
+
+/* Logo created using https://www.freelogodesign.org/ */
+
+#logo {
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: inline-block;
+
+}
+
+/*** Nav Styles **/
+
+#nav {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: right;
+    margin-bottom: 50px;
+
+}
+
+#nav li {
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 50px;
+    text-transform: uppercase;
+
+}
+
+#nav li a {
+    display: block;
+    font-family: "Helvetica";
+    color: #444;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #ad0d30;
+    cursor: pointer;
+
+}
+
+
+
+/*** Footer Styles **/
+
+/* Footer HTML and CSS adapted from Web App Dev Practical 3 Solution */
+
+.clear {
+    clear: both;
+}
+
+
+.wrapper2 {
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 80px;
+}
+
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+
+h5 {
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover {
+    color: #ad0d30;
+}
+
+
+
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+u,
+i,
+center,
+ul,
+li,
+footer {
+
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+footer {
+    background-color: #f8fafa;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+#footer-info {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+/*** Tables **/
+
+/*** Table Styles - Adapted from CodePen https://codepen.io/anon/pen/ooJzMY **/
+
+#orderstable {
+    max-width: 80%;
+    margin-bottom: 100px;
+    margin-left: 280px;
+
+}
+
+#last20table {
+    width: 80%;
+    margin-top: 150px;
+    margin-left: 280px;
+    margin-bottom: 20px;
+}
+
+#ptable {
+    width: 80%;
+    margin-bottom: 100px;
+    float: right;
+
+}
+
+
+table {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+    margin-bottom: 100px;
+
+}
+
+th {
+    color: #D5DDE5;
+    background: #1b1e24;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 24px;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+
+
+}
+
+
+th:first-child {
+    border-top-left-radius: 3px;
+}
+
+th:last-child {
+    border-top-right-radius: 3px;
+    border-right: none;
+}
+
+tr {
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    color: #666B85;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+
+}
+
+tr:hover td {
+    background: #7c0113;
+    color: #FFFFFF;
+    border-top: 1px solid #22262e;
+}
+
+tr:first-child {
+    border-top: none;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+    background: #EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+    background: #7c0113;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+td {
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 18px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+    border-right: 0px;
+}
+
+th.text-left {
+    text-align: left;
+}
+
+th.text-center {
+    text-align: center;
+}
+
+th.text-right {
+    text-align: right;
+}
+
+td.text-left {
+    text-align: left;
+}
+
+td.text-center {
+    text-align: center;
+}
+
+td.text-right {
+    text-align: right;
+}
+
+#details {
+    width: 600px;
+    height: 100px;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 25px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #C1C3D1;
+    border-bottom-left-radius: 3px;
+}
+
+#odetails {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: right;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 25px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #C1C3D1;
+    border-bottom-left-radius: 3px;
+}
+
+h8 {
+    font-size: 22px;
+    float: left;
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+h9 {
+    font-size: 22px;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.main {
+    width: 20%;
+
+    float: left;
+
+}
+#t {
+    float: left;
+}
+
+/*** Input Styles **/
+
+/*** Input Styles - Adapted from W3Schools **/
+input {
+    position: relative;
+    text-align: center;
+    background-color: #7c0113;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 70%;
+    margin-left: 50px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input:active {
+  background-color: #544949;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
